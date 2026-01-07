@@ -1,0 +1,8 @@
+# Environment variables: security
+.env
+useful_notes.txt
+dbtext
+.idea
+config.json
+name.json
+node_modules/

@@ -1,0 +1,2 @@
+The archive is for old or obsolete commands and/or files.
+They should not be added back without proper refactoring and imports.
