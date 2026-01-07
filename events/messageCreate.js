@@ -43,9 +43,12 @@ module.exports = {
             {
                 if (message.channelId != restriction)
                 {
-                    await message.reply("Wrong channel. Use the restrict command to change it");
+                    const sentMessage = await message.reply("Wrong channel. Use the restrict command to change it");
+                    setTimeout(() => { sentMessage.delete(); }, 5000)
                     return
                 }
+
+
             }
             // call commands
             await command.execute(message, args);
