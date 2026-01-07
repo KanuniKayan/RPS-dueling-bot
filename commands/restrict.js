@@ -11,7 +11,7 @@ module.exports = {
     async execute(message, args) {
         try {
             // Check for permission
-            if (!message.member.permissions.has(PermissionsBitField.Flags.Administrator))
+            if (!message.member.permissions.has(PermissionsBitField.Flags.ManageMessages))
             {
                 console.log('Missing permissions');
                 message.reply(`Missing permissions`);
