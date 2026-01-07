@@ -3,7 +3,7 @@
 
 // Imports
 const { ActionRowBuilder, EmbedBuilder, ButtonBuilder, ButtonStyle, ComponentType, MessageFlags } = require('discord.js');
-const { getPrefix, getDuel } = require('../queries');
+const { getPrefix, getDuel, setDuel } = require('../queries');
 
 // Command
 module.exports = {
@@ -98,7 +98,7 @@ module.exports = {
             // Amount of EXP gained after end
             const winExp = 2;
             const lossExp = 1;
-            const requiredExp = 5;
+            const requiredExp = 4;
 
             // Player scores of this match
             let player1score = 0;

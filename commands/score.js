@@ -16,9 +16,11 @@ module.exports = {
             const score = await getScore(id);
             const charm = score.charm || '';
 
+            const winrate = Math.round((score.wins / (score.wins + score.losses)) * 100);
+
             // Build string
-            const string = `*[Level ${score.level}] [Exp: ${score.exp}/5]*\n**Duels:** ${score.duels}\n**Wins:** ${score.wins}\n` +
-                `**Losses:** ${score.losses}\n**Rounds:** ${score.rounds}`;
+            const string = `*[Level ${score.level}] [Exp: ${score.exp}/4]*\n**Duels:** ${score.duels}\n**Wins:** ${score.wins}\n` +
+                `**Losses:** ${score.losses}\n**Winrate:** ${winrate}%\n**Rounds:** ${score.rounds}`;
 
             // Create embed
             const embed = new EmbedBuilder()
