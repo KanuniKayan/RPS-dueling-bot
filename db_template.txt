@@ -1,0 +1,46 @@
+CREATE TABLE players (
+    id VARCHAR(20) PRIMARY KEY NULL,
+    name VARCHAR(100) NOT NULL,
+    level INT NOT NULL DEFAULT 0
+    exp INT NOT NULL DEFAULT 0;
+);
+
+CREATE TABLE scores (
+    user_id VARCHAR(20) PRIMARY KEY,
+    wins INT NOT NULL DEFAULT 0,
+    losses INT NOT NULL DEFAULT 0,
+    duels INT NOT NULL DEFAULT 0,
+    rounds INT NOT NULL DEFAULT 0,
+    FOREIGN KEY (user_id) REFERENCES players(id) ON DELETE CASCADE
+);
+
+CREATE TABLE currencies (
+    user_id VARCHAR(20) PRIMARY KEY,
+    rolls INT NOT NULL DEFAULT 0,
+    tokens INT NOT NULL DEFAULT 0,
+    duplidust INT NOT NULL DEFAULT 0,
+    FOREIGN KEY (user_id) REFERENCES players(id) ON DELETE CASCADE
+);
+
+CREATE TABLE inventories (
+    user_id VARCHAR(20) PRIMARY KEY,
+    commons TEXT[] NOT NULL DEFAULT '{}',
+    uncommons TEXT[] NOT NULL DEFAULT '{}',
+    rares TEXT[] NOT NULL DEFAULT '{}',
+    epics TEXT[] NOT NULL DEFAULT '{}',
+    legendaries TEXT[] NOT NULL DEFAULT '{}',
+    FOREIGN KEY (user_id) REFERENCES players(id) ON DELETE CASCADE
+);
+
+CREATE TABLE personalizations (
+    user_id VARCHAR(20) PRIMARY KEY,
+    charm VARCHAR(30) NULL,
+    banner VARCHAR(30) NULL,
+    FOREIGN KEY (user_id) REFERENCES players(id) ON DELETE CASCADE
+);
+
+CREATE TABLE settings (
+    server_id VARCHAR(20) PRIMARY KEY,
+    prefix VARCHAR(3) NOT NULL DEFAULT '.',
+    restriction VARCHAR(20) NULL
+);
