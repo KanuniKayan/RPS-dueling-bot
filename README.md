@@ -5,11 +5,11 @@ It features a streamlined embed interface for quality of life, database usage fo
 ---
 
 ## Table of contents
-- [Introduction](#-introduction)
-- [About](#-about)
-- [Screenshots](#-screenshots)
-- [Commands](#-commands)
-- [Setup](#-setup)
+- [Introduction](#introduction)
+- [About](#about)
+- [Screenshots](#screenshots)
+- [Commands](#commands)
+- [Setup](#setup)
 
 ---
 
@@ -21,6 +21,9 @@ This is a great bot to have on the side of the voice-channel.
 ---
 
 ## Commands
+
+Remove the brackets from usage
+
 | name        | usage                       |
 |-------------|-----------------------------|
 | prefix      | /prefix                     |
