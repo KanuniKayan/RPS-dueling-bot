@@ -41,6 +41,25 @@ This is a great bot to have on the side of the voice-channel.
 
 ## Screenshots
 
+### Starting a duel:
+
+![duel start](screenshots/duel_start.png)
+
+### Middle of a round:
+
+![duel mid round](screenshots/mid_round.png)
+
+### Duel finished:
+
+![duel win](screenshots/win.png)
+
+### Items:
+
+![items](screenshots/items.png)
+
+### Rolling:
+
+![rolling](screenshots/rolling.png)
 
 ---
 
