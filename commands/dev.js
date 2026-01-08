@@ -1,6 +1,5 @@
 // Dev commands, so that you can do it from discord rather than the console.
 
-const { fetch } = require('../queries.js');
 const { getPlayer, getScore, delPlayer, getDuel, setScore , getInventory, setEmoji, addPlayer, playerExists} = require("../queries");
 
 module.exports = {
