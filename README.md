@@ -5,11 +5,11 @@ It features a streamlined embed interface for quality of life, database usage fo
 ---
 
 ## Table of contents
- - [Introduction](#-introduction)
- - [About](#-about)
- - [Screenshots](#-screenshots)
- - [Commands](#-commands)
- - [Setup](#-setup)
+- [Introduction](#-introduction)
+- [About](#-about)
+- [Screenshots](#-screenshots)
+- [Commands](#-commands)
+- [Setup](#-setup)
 
 ---
 
